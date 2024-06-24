@@ -138,3 +138,11 @@
 .dd *:first-child {
     margin-top: 0;
 }
+
+svg#logo text {
+    fill: var(--color-text-default);
+}
+
+svg#logo path {
+    stroke: var(--color-text-default)
+}

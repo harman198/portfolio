@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 export default {
 	darkMode: 'selector',
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -12,9 +15,9 @@ export default {
 				muted: 'var(--color-text-muted)',
 			},
 			fontFamily: {
-				sans: ['var(--font-sans, ui-sans-serif)'],
-				serif: ['var(--font-serif, ui-serif)'],
-				heading: ['var(--font-heading, ui-sans-serif)'],
+				sans: ['var(--font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
+				serif: ['var(--font-serif, ui-serif)', ...defaultTheme.fontFamily.serif],
+				heading: ['var(--font-heading, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
 			},
 		},
 	},
