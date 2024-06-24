@@ -75,6 +75,13 @@
                         >Home</a
                     >
                 </li>
+                <li class="">
+                    <a
+                        href="#aboutme"
+                        class="flex items-center dark:hover:text-white hover:text-link px-4 py-3"
+                        >About Me</a
+                    >
+                </li>
             </ul>
         </nav><div
             class="items-center md:w-auto w-full hidden md:flex bottom-0 fixed justify-end left-0 md:justify-self-end md:mb-0 md:p-0 md:self-center md:static p-3 rtl:left-auto rtl:right-0"
@@ -141,4 +148,23 @@
             false,
         );
     }
+    let lastKnownScrollPosition = window.scrollY;
+    let ticking = true;
+    function applyHeaderStylesOnScroll() {
+        const header = document.querySelector("#header");
+        if (!header) return;
+        if (
+            lastKnownScrollPosition > 60 &&
+            !header.classList.contains("scroll")
+        ) {
+            header.classList.add("scroll");
+        } else if (
+            lastKnownScrollPosition <= 60 &&
+            header.classList.contains("scroll")
+        ) {
+            header.classList.remove("scroll");
+        }
+        ticking = false;
+    }
+    (() => applyHeaderStylesOnScroll())();
 </script>
