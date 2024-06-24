@@ -1,5 +1,8 @@
 ---
 import "../assets/styles/tailwind.css";
+
+import Layout from "../layouts/Layout.astro";
+
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import AboutMe from "../components/AboutMe.astro";
@@ -9,35 +12,14 @@ import Skills from "../components/Skills.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en" class="2xl:text-[20px] dark motion-safe:scroll-smooth">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Harman Khangura - Portfolio</title>
-		<script>
-			// On page load or when changing themes
-			if (
-				localStorage.theme === "dark" ||
-				(!("theme" in localStorage) &&
-					window.matchMedia("(prefers-color-scheme: dark)").matches)
-			) {
-				document.documentElement.classList.add("dark");
-			} else {
-				document.documentElement.classList.remove("dark");
-			}
-		</script>
-	</head>
-	<body class="antialiased bg-page text-default tracking-tight">
-		<Header />
-		<main>
-			<Hero />
-			<AboutMe />
-			<WorkExperience />
-			<Education />
-			<Skills />
-		</main>
-		<Footer />
-	</body>
-</html>
+<Layout title="Harman Khangura - Portfolio">
+	<Header />
+	<main>
+		<Hero />
+		<AboutMe />
+		<WorkExperience />
+		<Education />
+		<Skills />
+	</main>
+	<Footer />
+</Layout>

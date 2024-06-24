@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Oops! Something wrong happened">
+    <section class="flex items-center h-full p-16">
+        <div
+            class="flex items-center container flex-col justify-center mx-auto my-8 px-5"
+        >
+            <div class="max-w-md text-center">
+                <h2 class="mb-8 font-bold text-9xl">
+                    <span class="sr-only">Error</span>
+                    <span class="text-primary">404</span>
+                </h2><p class="font-semibold md:text-3xl text-3xl">
+                    Sorry, looks like you have wandered off.
+                </p><p class="mb-8 dark:text-slate-400 mt-4 text-lg text-muted">
+                    But dont worry, you can find plenty of other things on our
+                    homepage.
+                </p><a class="btn ml-4" href="/" rel="noopener noreferrer"
+                    >Back to homepage</a
+                >
+            </div>
+        </div>
+    </section>
+</Layout>
