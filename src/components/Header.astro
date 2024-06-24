@@ -1,3 +1,7 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <header
     class="mx-auto w-full border-b border-gray-50/0 ease-in-out flex-none sticky top-0 transition-[opacity] z-40"
     id="header"
@@ -114,21 +118,11 @@
                         class="text-muted dark:text-gray-400 dark:focus:ring-gray-700 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 inline-flex items-center p-2.5 rounded-lg text-sm"
                         type="button"
                         id="toggleTheme"
-                        ><svg
+                    >
+                        <Icon
                             class="h-6 w-6 md:h-5 md:inline-block md:w-5"
-                            height="1em"
-                            viewBox="0 0 24 24"
-                            width="1em"
-                            ><symbol id="ai:tabler:sun"
-                                ><path
-                                    d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0-8 0m-5 0h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7l-.7.7m0 11.4l.7.7m-12.1-.7l-.7.7"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"></path></symbol
-                            ><use xlink:href="#ai:tabler:sun"></use></svg
-                        ></button
+                            name="tabler:sun"
+                        /></button
                     >
                 </div>
             </div>
