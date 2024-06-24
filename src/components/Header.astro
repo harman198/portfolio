@@ -137,6 +137,8 @@
 </header>
 
 <script>
+    import { Picture } from "astro:assets";
+
     const toggleThemeButton = document.getElementById("toggleTheme");
     if (toggleThemeButton !== null) {
         toggleThemeButton.addEventListener("click", function () {
@@ -169,9 +171,8 @@
             false,
         );
     }
-    let lastKnownScrollPosition = window.scrollY;
-    let ticking = true;
     function applyHeaderStylesOnScroll() {
+        let lastKnownScrollPosition = window.scrollY;
         const header = document.querySelector("#header");
         if (!header) return;
         if (
@@ -185,7 +186,10 @@
         ) {
             header.classList.remove("scroll");
         }
-        ticking = false;
     }
+    window.addEventListener("load", function () {
+        applyHeaderStylesOnScroll();
+    });
+    window.addEventListener("scroll", () => applyHeaderStylesOnScroll());
     (() => applyHeaderStylesOnScroll())();
 </script>
