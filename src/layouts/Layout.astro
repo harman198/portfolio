@@ -1,5 +1,6 @@
 ---
 import "../assets/styles/tailwind.css";
+import { SEO } from "astro-seo";
 
 export interface Props {
     title: string;
@@ -10,10 +11,22 @@ const { title } = Astro.props;
 
 <html lang="en" class="2xl:text-[20px] dark motion-safe:scroll-smooth">
     <head>
+        <SEO
+            title="Harman Khangura Portfolio"
+            description="My personal portfolio as senior developer working as a full stack develop with extended experience"
+            openGraph={{
+                basic: {
+                    title: "A Very Descriptive Title",
+                    type: "My personal portfolio as senior developer working as a full stack develop with extended experience",
+                    image: "",
+                },
+            }}
+        />
         <meta charset="utf-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
+        <link rel="sitemap" href="/sitemap-index.xml" />
         <title set:html={title} />
         <script>
             // On page load or when changing themes

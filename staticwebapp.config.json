@@ -1,4 +1,7 @@
 {
+    "globalHeaders": {
+        "X-Robots-Tag": "all"
+    },
     "navigationFallback": {
         "rewrite": "/404",
         "exclude": [
