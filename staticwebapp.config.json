@@ -8,6 +8,8 @@
             "/",
             "/index",
             "index.html",
+            "/contact",
+            "/thankyou",
             "/images/*.{png,jpg,gif,ico}",
             "/*.{css,scss,js}"
         ]

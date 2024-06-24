@@ -1,0 +1,139 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Contact - Harman Khangura">
+    <Header />
+    <main>
+        <section class="relative not-prose md:-mt-[76px]">
+            <div
+                class="absolute inset-0 pointer-events-none"
+                aria-hidden="true"
+            >
+            </div><div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="pointer-events-none md:pt-[76px] pt-0"></div><div
+                    class="py-12 md:pb-8 md:py-20 pb-8"
+                >
+                    <div class="text-center max-w-5xl mx-auto">
+                        <p
+                            class="font-bold dark:text-blue-200 text-base text-secondary tracking-wide uppercase"
+                        >
+                            Contact
+                        </p><h1
+                            class="font-bold font-heading leading-tighter tracking-tighter dark:text-gray-200 mb-4 md:text-6xl text-5xl"
+                        >
+                            Let's Connect!
+                        </h1><div class="max-w-3xl mx-auto">
+                            <div
+                                class="flex flex-col flex-nowrap gap-4 m-auto max-w-xs sm:flex-row sm:justify-center sm:max-w-md"
+                            >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="relative not-prose scroll-mt-[72px]" id="form">
+            <div
+                class="absolute inset-0 pointer-events-none -z-[1]"
+                aria-hidden="true"
+            >
+                <div class="absolute inset-0"></div>
+            </div><div
+                class="relative max-w-7xl mx-auto px-4 lg:py-20 md:px-6 md:py-16 py-12 text-default"
+            >
+                <div class="text-center max-w-3xl mb-8 md:mb-12 md:mx-auto">
+                    <h2
+                        class="font-bold font-heading leading-tighter tracking-tighter md:text-4xl text-3xl text-heading"
+                    >
+                        Drop me a message today!
+                    </h2><p class="text-muted mt-4 text-xl">
+                        Want to get in touch? Feel free to send me a message and
+                        I will reply as soon as possible.
+                    </p>
+                </div><div
+                    class="flex flex-col backdrop-blur bg-white border dark:bg-slate-900 rounded-lg border-gray-200 dark:border-gray-700 lg:p-8 max-w-xl mx-auto p-4 shadow sm:p-6 w-full"
+                >
+                    <form
+                        method="post"
+                        action="https://formsubmit.co/89585d0cb967b3c535b0f8584119fbd0"
+                    >
+                        <input
+                            type="hidden"
+                            name="_next"
+                            value="https://www.harmankhangura.com/thankyou"
+                        />
+                        <input
+                            type="hidden"
+                            name="_subject"
+                            value="New Portfolio Website Submission"
+                        />
+                        <div class="mb-6">
+                            <label class="block font-medium text-sm" for="name"
+                                >Name</label
+                            >
+                            <input
+                                class="block bg-white border border-gray-200 dark:bg-slate-900 dark:border-gray-700 px-4 py-3 rounded-lg text-md w-full"
+                                id="name"
+                                name="name"
+                                type="text"
+                                autocomplete="on"
+                                placeholder=""
+                            />
+                        </div><div class="mb-6">
+                            <label class="block font-medium text-sm" for="email"
+                                >Email</label
+                            >
+                            <input
+                                class="block bg-white border border-gray-200 dark:bg-slate-900 dark:border-gray-700 px-4 py-3 rounded-lg text-md w-full"
+                                id="email"
+                                name="email"
+                                type="email"
+                                autocomplete="on"
+                                placeholder=""
+                            />
+                        </div><div>
+                            <label
+                                class="block font-medium text-sm"
+                                for="textarea">Message</label
+                            >
+                            <textarea
+                                class="block bg-white border border-gray-200 dark:bg-slate-900 dark:border-gray-700 px-4 py-3 rounded-lg text-md w-full"
+                                id="textarea"
+                                name="message"
+                                rows="4"></textarea>
+                        </div><div class="flex items-start mt-3">
+                            <div class="flex mt-0.5">
+                                <input
+                                    class="block bg-white border border-gray-200 dark:bg-slate-900 dark:border-gray-700 px-4 py-3 rounded-lg text-md w-full cursor-pointer mt-1"
+                                    id="disclaimer"
+                                    name="disclaimer"
+                                    type="checkbox"
+                                />
+                            </div><div class="ml-3">
+                                <label
+                                    class="dark:text-gray-400 text-sm text-gray-600 cursor-pointer select-none"
+                                    for="disclaimer"
+                                    >By submitting this contact form, you
+                                    acknowledge and agree to the collection of
+                                    your personal information.</label
+                                >
+                            </div>
+                        </div><div class="grid mt-10">
+                            <button class="btn-primary" type="submit"
+                                >Submit</button
+                            >
+                        </div><div class="text-center mt-3">
+                            <p class="dark:text-gray-400 text-sm text-gray-600">
+                                I typically respond within 4 working days.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>

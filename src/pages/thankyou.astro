@@ -1,8 +1,11 @@
 ---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Oops! Something wrong happened">
+<Layout title="Thank you! - Harman Khangura">
+    <Header />
     <main>
         <section class="flex items-center h-full p-16">
             <div
@@ -10,14 +13,13 @@ import Layout from "../layouts/Layout.astro";
             >
                 <div class="max-w-md text-center">
                     <h2 class="mb-8 font-bold text-9xl">
-                        <span class="sr-only">Error</span>
-                        <span class="text-primary">404</span>
+                        <span class="text-primary">Thank you!</span>
                     </h2><p class="font-semibold md:text-3xl text-3xl">
-                        Sorry, looks like you have wandered off.
+                        Your request has been submitted.
                     </p><p
                         class="mb-8 dark:text-slate-400 mt-4 text-lg text-muted"
                     >
-                        But dont worry, you can read more on the homepage.
+                        I will be in touch as soon as possible.
                     </p><a class="btn ml-4" href="/" rel="noopener noreferrer"
                         >Back to homepage</a
                     >
@@ -25,4 +27,5 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </section>
     </main>
+    <Footer />
 </Layout>
