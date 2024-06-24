@@ -107,6 +107,13 @@ import { Icon } from "astro-icon/components";
                         >Skills</a
                     >
                 </li>
+                <li class="">
+                    <a
+                        href="/contact"
+                        class="flex items-center dark:hover:text-white hover:text-link px-4 py-3"
+                        >Contact</a
+                    >
+                </li>
             </ul>
         </nav><div
             class="items-center md:w-auto w-full hidden md:flex bottom-0 fixed justify-end left-0 md:justify-self-end md:mb-0 md:p-0 md:self-center md:static p-3 rtl:left-auto rtl:right-0"
@@ -131,8 +138,6 @@ import { Icon } from "astro-icon/components";
 </header>
 
 <script>
-    import { Picture } from "astro:assets";
-
     const toggleThemeButton = document.getElementById("toggleTheme");
     if (toggleThemeButton !== null) {
         toggleThemeButton.addEventListener("click", function () {
