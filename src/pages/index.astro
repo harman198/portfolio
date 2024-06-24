@@ -2,15 +2,36 @@
 
 ---
 
-<html lang="en">
+<html lang="en" class="bg-white dark:bg-black text-black dark:text-white">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Harman Khangura - Portfolio</title>
+		<script>
+			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+			if (
+				localStorage.theme === "dark" ||
+				(!("theme" in localStorage) &&
+					window.matchMedia("(prefers-color-scheme: dark)").matches)
+			) {
+				document.documentElement.classList.add("dark");
+			} else {
+				document.documentElement.classList.remove("dark");
+			}
+
+			// Whenever the user explicitly chooses light mode
+			localStorage.theme = "light";
+
+			// Whenever the user explicitly chooses dark mode
+			localStorage.theme = "dark";
+
+			// Whenever the user explicitly chooses to respect the OS preference
+			localStorage.removeItem("theme");
+		</script>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1>Welcome to my website</h1>
 	</body>
 </html>
