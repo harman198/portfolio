@@ -1,8 +1,8 @@
 ---
-
+import "../assets/styles/tailwind.css";
 ---
 
-<html lang="en" class="bg-white dark:bg-black text-black dark:text-white">
+<html lang="en" class="2xl:text-[20px] dark motion-safe:scroll-smooth">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -10,7 +10,7 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Harman Khangura - Portfolio</title>
 		<script>
-			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+			// On page load or when changing themes
 			if (
 				localStorage.theme === "dark" ||
 				(!("theme" in localStorage) &&
@@ -20,18 +20,9 @@
 			} else {
 				document.documentElement.classList.remove("dark");
 			}
-
-			// Whenever the user explicitly chooses light mode
-			localStorage.theme = "light";
-
-			// Whenever the user explicitly chooses dark mode
-			localStorage.theme = "dark";
-
-			// Whenever the user explicitly chooses to respect the OS preference
-			localStorage.removeItem("theme");
 		</script>
 	</head>
-	<body>
+	<body class="antialiased bg-page text-default tracking-tight">
 		<h1>Welcome to my website</h1>
 	</body>
 </html>
